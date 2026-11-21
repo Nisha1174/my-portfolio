@@ -1,0 +1,371 @@
+
+.contact-section {
+  background: #f4f2ee;
+  color: #171717;
+  padding: 100px 7%;
+  overflow: hidden;
+}
+
+.contact-container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Heading */
+
+.contact-heading {
+  max-width: 760px;
+  margin-bottom: 65px;
+}
+
+.contact-eyebrow {
+  color: #8075b2;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.contact-heading h2 {
+  font-size: clamp(43px, 5vw, 62px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.contact-heading h2 span {
+  color: #8980b4;
+}
+
+.contact-heading > p:last-child {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  max-width: 650px;
+}
+
+/* Two Column Layout */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+/* Professional Profile */
+
+.contact-professional {
+  padding: 35px 0;
+}
+
+.professional-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid #d9d5cd;
+  border-radius: 30px;
+  color: #555;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  background: #299d72;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(41,157,114,0.12);
+}
+
+.contact-professional h3 {
+  font-size: 36px;
+  margin: 35px 0 8px;
+  letter-spacing: -1px;
+}
+
+.professional-role {
+  color: #8075b2;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.professional-description {
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+/* Technical Focus */
+
+.professional-focus > p {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #777;
+  margin-bottom: 17px;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.focus-tags span {
+  background: white;
+  border: 1px solid #e3dfd8;
+  border-radius: 7px;
+  padding: 11px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.focus-tags span:hover {
+  border-color: #8980b4;
+  color: #8075b2;
+  transform: translateY(-3px);
+}
+
+/* Location */
+
+.professional-location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #666;
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+/* Social */
+
+.professional-socials {
+  display: flex;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.professional-socials a {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #dedad3;
+  background: white;
+  color: #171717;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.professional-socials a:hover {
+  background: #171717;
+  color: white;
+  transform: translateY(-4px);
+}
+
+/* Recruiter Card */
+
+.recruiter-card {
+  background: #fff;
+  border: 1px solid #e5e1da;
+  border-radius: 17px;
+  padding: 35px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.035);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recruiter-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 28px;
+}
+
+.recruiter-card-header span {
+  color: #8980b4;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.recruiter-card-header h3 {
+  font-size: 25px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.recruiter-card-header > svg {
+  font-size: 28px;
+  color: #8980b4;
+}
+
+/* Contact Items */
+
+.recruiter-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 21px 0;
+  border-bottom: 1px solid #eeeae4;
+}
+
+.recruiter-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #eeeaf5;
+  color: #8075b2;
+  border-radius: 10px;
+  font-size: 19px;
+}
+
+.recruiter-contact-item > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.recruiter-contact-item small {
+  color: #888;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.recruiter-contact-item a {
+  color: #171717;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.recruiter-contact-item a:hover {
+  color: #8075b2;
+}
+
+.contact-arrow {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: #8980b4;
+}
+
+/* Resume CTA */
+
+.recruiter-resume {
+  margin-top: 30px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #f4f2f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.recruiter-resume strong {
+  font-size: 17px;
+}
+
+.recruiter-resume p {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+.resume-download {
+  flex-shrink: 0;
+  padding: 13px 17px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-radius: 8px;
+  background: #171717;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.resume-download:hover {
+  background: #8075b2;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .contact-layout {
+    gap: 30px;
+  }
+
+  .recruiter-card {
+    padding: 25px;
+  }
+
+  .recruiter-resume {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact-section {
+    padding: 75px 6%;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-heading {
+    margin-bottom: 35px;
+  }
+
+  .contact-heading h2 {
+    font-size: 43px;
+  }
+
+  .contact-professional {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-heading h2 {
+    font-size: 36px;
+  }
+
+  .contact-professional h3 {
+    font-size: 30px;
+  }
+
+  .recruiter-card {
+    padding: 21px;
+  }
+
+  .recruiter-card-header h3 {
+    font-size: 21px;
+  }
+
+  .recruiter-contact-item a {
+    font-size: 14px;
+  }
+}

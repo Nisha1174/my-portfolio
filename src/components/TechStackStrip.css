@@ -1,0 +1,137 @@
+
+.tech-marquee {
+  width: 100%;
+  padding: 24px 0 28px;
+  background: #eef4fb;
+  border-top: 1px solid #dce6f2;
+  border-bottom: 1px solid #dce6f2;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-heading {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.marquee-heading span {
+  color: #526c8c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeMove 45s linear infinite;
+  will-change: transform;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 65px;
+  padding-right: 65px;
+}
+
+.marquee-item {
+  min-width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.marquee-item img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.marquee-item span {
+  color: #425873;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.marquee-item:hover {
+  transform: translateY(-5px);
+}
+
+.marquee-item:hover img {
+  transform: scale(1.15);
+}
+
+/* Infinite right-to-left movement */
+
+@keyframes marqueeMove {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause when the user wants to inspect a technology */
+
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .marquee-group {
+    gap: 38px;
+    padding-right: 38px;
+  }
+
+  .marquee-item img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .marquee-item span {
+    font-size: 11px;
+  }
+
+  .marquee-track {
+    animation-duration: 35s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
